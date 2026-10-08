@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Мой проект: Исходный файл chesspiece.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Мой проект<span id="projectnumber">&#160;3</span>
+   </div>
+   <div id="projectbrief">Краткое описание проекта</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('chesspiece_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">chesspiece.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="chesspiece_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef CHESSPIECE_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define CHESSPIECE_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifdef LAB3_EXPORTS</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define LAB3_API __declspec(dllexport)</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#elif defined(LAB3_STATIC)</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define LAB3_API</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#define LAB3_API __declspec(dllimport)</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="chesspiece_8h.html#ab87bacfdad76e61b9412d7124be44c1c">   24</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="chesspiece_8h.html#ab87bacfdad76e61b9412d7124be44c1c">Color</a> { WHITE, BLACK };</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_chess_piece.html">   33</a></span><span class="keyword">class </span>LAB3_API <a class="code hl_function" href="class_chess_piece.html#a2fd7f0623fffd43be7a822afe3192e01">ChessPiece</a> {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_function" href="class_chess_piece.html#a2fd7f0623fffd43be7a822afe3192e01">ChessPiece</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <a class="code hl_enumeration" href="chesspiece_8h.html#ab87bacfdad76e61b9412d7124be44c1c">Color</a> color, <span class="keyword">const</span> <span class="keywordtype">char</span>* name);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_function" href="class_chess_piece.html#a2fd7f0623fffd43be7a822afe3192e01">ChessPiece</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_chess_piece.html#a2fd7f0623fffd43be7a822afe3192e01">ChessPiece</a>&amp; other);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_function" href="class_chess_piece.html#a2fd7f0623fffd43be7a822afe3192e01">ChessPiece</a>&amp; <a class="code hl_function" href="class_chess_piece.html#aa83b4e1590e5cc7b9a3a78748f87dc7b">operator=</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_chess_piece.html#a2fd7f0623fffd43be7a822afe3192e01">ChessPiece</a>&amp; other);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">virtual</span> <a class="code hl_function" href="class_chess_piece.html#a2fd7f0623fffd43be7a822afe3192e01">~ChessPiece</a>();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_chess_piece.html#ad753498246ae08c366050def6852bcdf">   68</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_chess_piece.html#ad753498246ae08c366050def6852bcdf">canMoveTo</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_chess_piece.html#acdfc3a863b7aa2e1b95c00f2e630798e">   74</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">char</span> <a class="code hl_function" href="class_chess_piece.html#acdfc3a863b7aa2e1b95c00f2e630798e">getSymbol</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">virtual</span> std::string <a class="code hl_function" href="class_chess_piece.html#a5715f7b4b81bb70ab5a9567bd75150d4">getType</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_chess_piece.html#a7138e3821bb16d98cf1dcb1e6f84c0f9">print</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_chess_piece.html#a048032a794013473f2a7651a17e0a22a">   88</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_chess_piece.html#a048032a794013473f2a7651a17e0a22a">getX</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_chess_piece.html#a4296e2b710fa1872a5561191b6691953">m_x</a>; }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="class_chess_piece.html#ab81774100cdd2ad4f4fd3c8ff2887e1e">   90</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_chess_piece.html#ab81774100cdd2ad4f4fd3c8ff2887e1e">getY</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_chess_piece.html#a3ea8be53226ad44722cb1216ac9700e8">m_y</a>; }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="class_chess_piece.html#a44c5dca2c69537a17678ee1fbb3ac18b">   92</a></span>    <a class="code hl_enumeration" href="chesspiece_8h.html#ab87bacfdad76e61b9412d7124be44c1c">Color</a> <a class="code hl_function" href="class_chess_piece.html#a44c5dca2c69537a17678ee1fbb3ac18b">getColor</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_chess_piece.html#a1d6c1cf552059edf4cef8033c8ecdf0c">m_color</a>; }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="class_chess_piece.html#aca28b89e05e423fce60984c31c088f68">   94</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="class_chess_piece.html#aca28b89e05e423fce60984c31c088f68">getName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_chess_piece.html#abb5157cbb5f93c9a644d1857ecd8029d">m_name</a>; }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="class_chess_piece.html#a4120037311ca4e78e485e6337d2c867b">   97</a></span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_chess_piece.html#a4120037311ca4e78e485e6337d2c867b">getWhiteCount</a>() { <span class="keywordflow">return</span> s_whiteCount; }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="class_chess_piece.html#ab142391c404c7b2c1f5da4772e26337a">   99</a></span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_chess_piece.html#ab142391c404c7b2c1f5da4772e26337a">getBlackCount</a>() { <span class="keywordflow">return</span> s_blackCount; }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> validateBoardState(<a class="code hl_class" href="class_chess_piece.html">ChessPiece</a>* <span class="keyword">const</span> pieces[], <span class="keywordtype">int</span> count);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="class_chess_piece.html#a4296e2b710fa1872a5561191b6691953">  112</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_chess_piece.html#a4296e2b710fa1872a5561191b6691953">m_x</a>;          </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="class_chess_piece.html#a3ea8be53226ad44722cb1216ac9700e8">  113</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_chess_piece.html#a3ea8be53226ad44722cb1216ac9700e8">m_y</a>;          </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="class_chess_piece.html#a1d6c1cf552059edf4cef8033c8ecdf0c">  114</a></span>    <a class="code hl_enumeration" href="chesspiece_8h.html#ab87bacfdad76e61b9412d7124be44c1c">Color</a> <a class="code hl_variable" href="class_chess_piece.html#a1d6c1cf552059edf4cef8033c8ecdf0c">m_color</a>;    </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="class_chess_piece.html#abb5157cbb5f93c9a644d1857ecd8029d">  115</a></span>    <span class="keywordtype">char</span>* <a class="code hl_variable" href="class_chess_piece.html#abb5157cbb5f93c9a644d1857ecd8029d">m_name</a>;     </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> s_whiteCount;  </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> s_blackCount;  </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keywordtype">void</span> copyFrom(<span class="keyword">const</span> <a class="code hl_function" href="class_chess_piece.html#a2fd7f0623fffd43be7a822afe3192e01">ChessPiece</a>&amp; other);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>};</div>
+</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="preprocessor">#endif </span></div>
+<div class="ttc" id="achesspiece_8h_html_ab87bacfdad76e61b9412d7124be44c1c"><div class="ttname"><a href="chesspiece_8h.html#ab87bacfdad76e61b9412d7124be44c1c">Color</a></div><div class="ttdeci">Color</div><div class="ttdoc">Цвет шахматной фигуры.</div><div class="ttdef"><b>Определения</b> chesspiece.h:24</div></div>
+<div class="ttc" id="aclass_chess_piece_html"><div class="ttname"><a href="class_chess_piece.html">ChessPiece</a></div><div class="ttdoc">Абстрактный базовый класс для всех шахматных фигур.</div><div class="ttdef"><b>Определения</b> chesspiece.h:33</div></div>
+<div class="ttc" id="aclass_chess_piece_html_a048032a794013473f2a7651a17e0a22a"><div class="ttname"><a href="class_chess_piece.html#a048032a794013473f2a7651a17e0a22a">ChessPiece::getX</a></div><div class="ttdeci">int getX() const</div><div class="ttdoc">Возвращает координату X.</div><div class="ttdef"><b>Определения</b> chesspiece.h:88</div></div>
+<div class="ttc" id="aclass_chess_piece_html_a1d6c1cf552059edf4cef8033c8ecdf0c"><div class="ttname"><a href="class_chess_piece.html#a1d6c1cf552059edf4cef8033c8ecdf0c">ChessPiece::m_color</a></div><div class="ttdeci">Color m_color</div><div class="ttdoc">Цвет фигуры</div><div class="ttdef"><b>Определения</b> chesspiece.h:114</div></div>
+<div class="ttc" id="aclass_chess_piece_html_a2fd7f0623fffd43be7a822afe3192e01"><div class="ttname"><a href="class_chess_piece.html#a2fd7f0623fffd43be7a822afe3192e01">ChessPiece::ChessPiece</a></div><div class="ttdeci">ChessPiece(int x, int y, Color color, const char *name)</div><div class="ttdoc">Конструктор с параметрами.</div><div class="ttdef"><b>Определения</b> chesspiece.cpp:11</div></div>
+<div class="ttc" id="aclass_chess_piece_html_a3ea8be53226ad44722cb1216ac9700e8"><div class="ttname"><a href="class_chess_piece.html#a3ea8be53226ad44722cb1216ac9700e8">ChessPiece::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdoc">Координата Y (0..7).</div><div class="ttdef"><b>Определения</b> chesspiece.h:113</div></div>
+<div class="ttc" id="aclass_chess_piece_html_a4120037311ca4e78e485e6337d2c867b"><div class="ttname"><a href="class_chess_piece.html#a4120037311ca4e78e485e6337d2c867b">ChessPiece::getWhiteCount</a></div><div class="ttdeci">static int getWhiteCount()</div><div class="ttdoc">Возвращает количество белых фигур.</div><div class="ttdef"><b>Определения</b> chesspiece.h:97</div></div>
+<div class="ttc" id="aclass_chess_piece_html_a4296e2b710fa1872a5561191b6691953"><div class="ttname"><a href="class_chess_piece.html#a4296e2b710fa1872a5561191b6691953">ChessPiece::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdoc">Координата X (0..7).</div><div class="ttdef"><b>Определения</b> chesspiece.h:112</div></div>
+<div class="ttc" id="aclass_chess_piece_html_a44c5dca2c69537a17678ee1fbb3ac18b"><div class="ttname"><a href="class_chess_piece.html#a44c5dca2c69537a17678ee1fbb3ac18b">ChessPiece::getColor</a></div><div class="ttdeci">Color getColor() const</div><div class="ttdoc">Возвращает цвет фигуры.</div><div class="ttdef"><b>Определения</b> chesspiece.h:92</div></div>
+<div class="ttc" id="aclass_chess_piece_html_a5715f7b4b81bb70ab5a9567bd75150d4"><div class="ttname"><a href="class_chess_piece.html#a5715f7b4b81bb70ab5a9567bd75150d4">ChessPiece::getType</a></div><div class="ttdeci">virtual std::string getType() const</div><div class="ttdoc">Виртуальная функция с реализацией по умолчанию.</div><div class="ttdef"><b>Определения</b> chesspiece.cpp:65</div></div>
+<div class="ttc" id="aclass_chess_piece_html_a7138e3821bb16d98cf1dcb1e6f84c0f9"><div class="ttname"><a href="class_chess_piece.html#a7138e3821bb16d98cf1dcb1e6f84c0f9">ChessPiece::print</a></div><div class="ttdeci">virtual void print() const</div><div class="ttdoc">Вывод информации о фигуре на стандартный вывод.</div><div class="ttdef"><b>Определения</b> chesspiece.cpp:69</div></div>
+<div class="ttc" id="aclass_chess_piece_html_aa83b4e1590e5cc7b9a3a78748f87dc7b"><div class="ttname"><a href="class_chess_piece.html#aa83b4e1590e5cc7b9a3a78748f87dc7b">ChessPiece::operator=</a></div><div class="ttdeci">ChessPiece &amp; operator=(const ChessPiece &amp;other)</div><div class="ttdoc">Оператор присваивания (глубокое копирование).</div><div class="ttdef"><b>Определения</b> chesspiece.cpp:37</div></div>
+<div class="ttc" id="aclass_chess_piece_html_ab142391c404c7b2c1f5da4772e26337a"><div class="ttname"><a href="class_chess_piece.html#ab142391c404c7b2c1f5da4772e26337a">ChessPiece::getBlackCount</a></div><div class="ttdeci">static int getBlackCount()</div><div class="ttdoc">Возвращает количество чёрных фигур.</div><div class="ttdef"><b>Определения</b> chesspiece.h:99</div></div>
+<div class="ttc" id="aclass_chess_piece_html_ab81774100cdd2ad4f4fd3c8ff2887e1e"><div class="ttname"><a href="class_chess_piece.html#ab81774100cdd2ad4f4fd3c8ff2887e1e">ChessPiece::getY</a></div><div class="ttdeci">int getY() const</div><div class="ttdoc">Возвращает координату Y.</div><div class="ttdef"><b>Определения</b> chesspiece.h:90</div></div>
+<div class="ttc" id="aclass_chess_piece_html_abb5157cbb5f93c9a644d1857ecd8029d"><div class="ttname"><a href="class_chess_piece.html#abb5157cbb5f93c9a644d1857ecd8029d">ChessPiece::m_name</a></div><div class="ttdeci">char * m_name</div><div class="ttdoc">Динамическая строка с именем</div><div class="ttdef"><b>Определения</b> chesspiece.h:115</div></div>
+<div class="ttc" id="aclass_chess_piece_html_aca28b89e05e423fce60984c31c088f68"><div class="ttname"><a href="class_chess_piece.html#aca28b89e05e423fce60984c31c088f68">ChessPiece::getName</a></div><div class="ttdeci">const char * getName() const</div><div class="ttdoc">Возвращает динамическую строку с именем фигуры.</div><div class="ttdef"><b>Определения</b> chesspiece.h:94</div></div>
+<div class="ttc" id="aclass_chess_piece_html_acdfc3a863b7aa2e1b95c00f2e630798e"><div class="ttname"><a href="class_chess_piece.html#acdfc3a863b7aa2e1b95c00f2e630798e">ChessPiece::getSymbol</a></div><div class="ttdeci">virtual char getSymbol() const =0</div><div class="ttdoc">Получить символ фигуры для отображения.</div></div>
+<div class="ttc" id="aclass_chess_piece_html_ad753498246ae08c366050def6852bcdf"><div class="ttname"><a href="class_chess_piece.html#ad753498246ae08c366050def6852bcdf">ChessPiece::canMoveTo</a></div><div class="ttdeci">virtual bool canMoveTo(int x, int y) const =0</div><div class="ttdoc">Проверка возможности хода на заданную клетку (геометрия).</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="chesspiece_8h.html">chesspiece.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

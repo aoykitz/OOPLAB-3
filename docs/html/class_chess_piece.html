@@ -1,0 +1,462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Мой проект: Класс ChessPiece</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Мой проект<span id="projectnumber">&#160;3</span>
+   </div>
+   <div id="projectbrief">Краткое описание проекта</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('class_chess_piece.html','','class_chess_piece-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс ChessPiece<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Абстрактный базовый класс для всех шахматных фигур.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="chesspiece_8h_source.html">chesspiece.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:ChessPiece:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_chess_piece.png" usemap="#ChessPiece_map" alt=""/>
+  <map id="ChessPiece_map" name="ChessPiece_map">
+<area href="class_jumping_piece.html" title="Фигура, перемещающаяся фиксированным прыжком (например, конь)." alt="JumpingPiece" shape="rect" coords="0,56,91,80"/>
+<area href="class_king.html" title="Шахматный король – ходит на одну клетку в любом направлении." alt="King" shape="rect" coords="101,56,192,80"/>
+<area href="class_sliding_piece.html" title="Фигура, движущаяся по прямым или диагоналям на любое количество клеток." alt="SlidingPiece" shape="rect" coords="202,56,293,80"/>
+<area href="class_horse.html" title="Шахматный конь – прыгающая фигура, ходит буквой &quot;Г&quot;." alt="Horse" shape="rect" coords="0,112,91,136"/>
+<area href="class_bishop.html" title="Шахматный слон – скользящая фигура, движется по диагоналям." alt="Bishop" shape="rect" coords="101,112,192,136"/>
+<area href="class_queen.html" title="Ферзь – объединяет движение ладьи и слона." alt="Queen" shape="rect" coords="202,112,293,136"/>
+<area href="class_rook.html" title="Ладья – скользящая фигура, движется по вертикали и горизонтали." alt="Rook" shape="rect" coords="303,112,394,136"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a2fd7f0623fffd43be7a822afe3192e01" id="r_a2fd7f0623fffd43be7a822afe3192e01"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a2fd7f0623fffd43be7a822afe3192e01">ChessPiece</a> (int x, int y, <a class="el" href="chesspiece_8h.html#ab87bacfdad76e61b9412d7124be44c1c">Color</a> color, const char *name)</td></tr>
+<tr class="memdesc:a2fd7f0623fffd43be7a822afe3192e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор с параметрами.  <br /></td></tr>
+<tr class="memitem:a96762c0d925713ad2f3810de6a0f726c" id="r_a96762c0d925713ad2f3810de6a0f726c"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a96762c0d925713ad2f3810de6a0f726c">ChessPiece</a> (const <a class="el" href="class_chess_piece.html">ChessPiece</a> &amp;other)</td></tr>
+<tr class="memdesc:a96762c0d925713ad2f3810de6a0f726c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования (глубокое копирование имени).  <br /></td></tr>
+<tr class="memitem:aa83b4e1590e5cc7b9a3a78748f87dc7b" id="r_aa83b4e1590e5cc7b9a3a78748f87dc7b"><td class="memItemLeft"><a class="el" href="class_chess_piece.html">ChessPiece</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#aa83b4e1590e5cc7b9a3a78748f87dc7b">operator=</a> (const <a class="el" href="class_chess_piece.html">ChessPiece</a> &amp;other)</td></tr>
+<tr class="memdesc:aa83b4e1590e5cc7b9a3a78748f87dc7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор присваивания (глубокое копирование).  <br /></td></tr>
+<tr class="memitem:a55fa05bb289888ca0ff5895a6f155960" id="r_a55fa05bb289888ca0ff5895a6f155960"><td class="memItemLeft"><a id="a55fa05bb289888ca0ff5895a6f155960" name="a55fa05bb289888ca0ff5895a6f155960"></a>
+virtual&#160;</td><td class="memItemRight"><b>~ChessPiece</b> ()</td></tr>
+<tr class="memdesc:a55fa05bb289888ca0ff5895a6f155960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Виртуальный деструктор. <br /></td></tr>
+<tr class="memitem:ad753498246ae08c366050def6852bcdf" id="r_ad753498246ae08c366050def6852bcdf"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#ad753498246ae08c366050def6852bcdf">canMoveTo</a> (int x, int y) const =0</td></tr>
+<tr class="memdesc:ad753498246ae08c366050def6852bcdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка возможности хода на заданную клетку (геометрия).  <br /></td></tr>
+<tr class="memitem:acdfc3a863b7aa2e1b95c00f2e630798e" id="r_acdfc3a863b7aa2e1b95c00f2e630798e"><td class="memItemLeft">virtual char&#160;</td><td class="memItemRight"><a class="el" href="#acdfc3a863b7aa2e1b95c00f2e630798e">getSymbol</a> () const =0</td></tr>
+<tr class="memdesc:acdfc3a863b7aa2e1b95c00f2e630798e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить символ фигуры для отображения.  <br /></td></tr>
+<tr class="memitem:a5715f7b4b81bb70ab5a9567bd75150d4" id="r_a5715f7b4b81bb70ab5a9567bd75150d4"><td class="memItemLeft">virtual std::string&#160;</td><td class="memItemRight"><a class="el" href="#a5715f7b4b81bb70ab5a9567bd75150d4">getType</a> () const</td></tr>
+<tr class="memdesc:a5715f7b4b81bb70ab5a9567bd75150d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Виртуальная функция с реализацией по умолчанию.  <br /></td></tr>
+<tr class="memitem:a7138e3821bb16d98cf1dcb1e6f84c0f9" id="r_a7138e3821bb16d98cf1dcb1e6f84c0f9"><td class="memItemLeft"><a id="a7138e3821bb16d98cf1dcb1e6f84c0f9" name="a7138e3821bb16d98cf1dcb1e6f84c0f9"></a>
+virtual void&#160;</td><td class="memItemRight"><b>print</b> () const</td></tr>
+<tr class="memdesc:a7138e3821bb16d98cf1dcb1e6f84c0f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод информации о фигуре на стандартный вывод. <br /></td></tr>
+<tr class="memitem:a048032a794013473f2a7651a17e0a22a" id="r_a048032a794013473f2a7651a17e0a22a"><td class="memItemLeft"><a id="a048032a794013473f2a7651a17e0a22a" name="a048032a794013473f2a7651a17e0a22a"></a>
+int&#160;</td><td class="memItemRight"><b>getX</b> () const</td></tr>
+<tr class="memdesc:a048032a794013473f2a7651a17e0a22a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает координату X. <br /></td></tr>
+<tr class="memitem:ab81774100cdd2ad4f4fd3c8ff2887e1e" id="r_ab81774100cdd2ad4f4fd3c8ff2887e1e"><td class="memItemLeft"><a id="ab81774100cdd2ad4f4fd3c8ff2887e1e" name="ab81774100cdd2ad4f4fd3c8ff2887e1e"></a>
+int&#160;</td><td class="memItemRight"><b>getY</b> () const</td></tr>
+<tr class="memdesc:ab81774100cdd2ad4f4fd3c8ff2887e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает координату Y. <br /></td></tr>
+<tr class="memitem:a44c5dca2c69537a17678ee1fbb3ac18b" id="r_a44c5dca2c69537a17678ee1fbb3ac18b"><td class="memItemLeft"><a id="a44c5dca2c69537a17678ee1fbb3ac18b" name="a44c5dca2c69537a17678ee1fbb3ac18b"></a>
+<a class="el" href="chesspiece_8h.html#ab87bacfdad76e61b9412d7124be44c1c">Color</a>&#160;</td><td class="memItemRight"><b>getColor</b> () const</td></tr>
+<tr class="memdesc:a44c5dca2c69537a17678ee1fbb3ac18b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает цвет фигуры. <br /></td></tr>
+<tr class="memitem:aca28b89e05e423fce60984c31c088f68" id="r_aca28b89e05e423fce60984c31c088f68"><td class="memItemLeft"><a id="aca28b89e05e423fce60984c31c088f68" name="aca28b89e05e423fce60984c31c088f68"></a>
+const char *&#160;</td><td class="memItemRight"><b>getName</b> () const</td></tr>
+<tr class="memdesc:aca28b89e05e423fce60984c31c088f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает динамическую строку с именем фигуры. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:a4120037311ca4e78e485e6337d2c867b" id="r_a4120037311ca4e78e485e6337d2c867b"><td class="memItemLeft"><a id="a4120037311ca4e78e485e6337d2c867b" name="a4120037311ca4e78e485e6337d2c867b"></a>
+static int&#160;</td><td class="memItemRight"><b>getWhiteCount</b> ()</td></tr>
+<tr class="memdesc:a4120037311ca4e78e485e6337d2c867b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает количество белых фигур. <br /></td></tr>
+<tr class="memitem:ab142391c404c7b2c1f5da4772e26337a" id="r_ab142391c404c7b2c1f5da4772e26337a"><td class="memItemLeft"><a id="ab142391c404c7b2c1f5da4772e26337a" name="ab142391c404c7b2c1f5da4772e26337a"></a>
+static int&#160;</td><td class="memItemRight"><b>getBlackCount</b> ()</td></tr>
+<tr class="memdesc:ab142391c404c7b2c1f5da4772e26337a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает количество чёрных фигур. <br /></td></tr>
+<tr class="memitem:adea4cb68b789d03cb7acab10d3a1a6ae" id="r_adea4cb68b789d03cb7acab10d3a1a6ae"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#adea4cb68b789d03cb7acab10d3a1a6ae">validateBoardState</a> (<a class="el" href="class_chess_piece.html">ChessPiece</a> *const pieces[], int count)</td></tr>
+<tr class="memdesc:adea4cb68b789d03cb7acab10d3a1a6ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Статическая функция проверки состояния доски.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:a4296e2b710fa1872a5561191b6691953" id="r_a4296e2b710fa1872a5561191b6691953"><td class="memItemLeft"><a id="a4296e2b710fa1872a5561191b6691953" name="a4296e2b710fa1872a5561191b6691953"></a>
+int&#160;</td><td class="memItemRight"><b>m_x</b></td></tr>
+<tr class="memdesc:a4296e2b710fa1872a5561191b6691953"><td class="mdescLeft">&#160;</td><td class="mdescRight">Координата X (0..7). <br /></td></tr>
+<tr class="memitem:a3ea8be53226ad44722cb1216ac9700e8" id="r_a3ea8be53226ad44722cb1216ac9700e8"><td class="memItemLeft"><a id="a3ea8be53226ad44722cb1216ac9700e8" name="a3ea8be53226ad44722cb1216ac9700e8"></a>
+int&#160;</td><td class="memItemRight"><b>m_y</b></td></tr>
+<tr class="memdesc:a3ea8be53226ad44722cb1216ac9700e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Координата Y (0..7). <br /></td></tr>
+<tr class="memitem:a1d6c1cf552059edf4cef8033c8ecdf0c" id="r_a1d6c1cf552059edf4cef8033c8ecdf0c"><td class="memItemLeft"><a id="a1d6c1cf552059edf4cef8033c8ecdf0c" name="a1d6c1cf552059edf4cef8033c8ecdf0c"></a>
+<a class="el" href="chesspiece_8h.html#ab87bacfdad76e61b9412d7124be44c1c">Color</a>&#160;</td><td class="memItemRight"><b>m_color</b></td></tr>
+<tr class="memdesc:a1d6c1cf552059edf4cef8033c8ecdf0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Цвет фигуры <br /></td></tr>
+<tr class="memitem:abb5157cbb5f93c9a644d1857ecd8029d" id="r_abb5157cbb5f93c9a644d1857ecd8029d"><td class="memItemLeft"><a id="abb5157cbb5f93c9a644d1857ecd8029d" name="abb5157cbb5f93c9a644d1857ecd8029d"></a>
+char *&#160;</td><td class="memItemRight"><b>m_name</b></td></tr>
+<tr class="memdesc:abb5157cbb5f93c9a644d1857ecd8029d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Динамическая строка с именем <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Абстрактный базовый класс для всех шахматных фигур. </p>
+<p>Содержит общие свойства (позиция, цвет, имя) и чисто виртуальные функции. Ведёт статический подсчёт созданных фигур по цветам. </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a2fd7f0623fffd43be7a822afe3192e01" name="a2fd7f0623fffd43be7a822afe3192e01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fd7f0623fffd43be7a822afe3192e01">&#9670;&#160;</a></span>ChessPiece() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChessPiece::ChessPiece </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="chesspiece_8h.html#ab87bacfdad76e61b9412d7124be44c1c">Color</a></td>          <td class="paramname"><span class="paramname"><em>color</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор с параметрами. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Начальная координата X (0–7). </td></tr>
+    <tr><td class="paramname">y</td><td>Начальная координата Y (0–7). </td></tr>
+    <tr><td class="paramname">color</td><td>Цвет фигуры. </td></tr>
+    <tr><td class="paramname">name</td><td>Название фигуры (динамическая строка). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a96762c0d925713ad2f3810de6a0f726c" name="a96762c0d925713ad2f3810de6a0f726c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96762c0d925713ad2f3810de6a0f726c">&#9670;&#160;</a></span>ChessPiece() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChessPiece::ChessPiece </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chess_piece.html">ChessPiece</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор копирования (глубокое копирование имени). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Копируемый объект. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="ad753498246ae08c366050def6852bcdf" name="ad753498246ae08c366050def6852bcdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad753498246ae08c366050def6852bcdf">&#9670;&#160;</a></span>canMoveTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ChessPiece::canMoveTo </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверка возможности хода на заданную клетку (геометрия). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Координата X цели (0–7). </td></tr>
+    <tr><td class="paramname">y</td><td>Координата Y цели (0–7). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если ход допустим по правилам фигуры. </dd></dl>
+
+<p>Замещается в <a class="el" href="class_jumping_piece.html#adc5ce60bbae79a1dd87bc5a13852d232">JumpingPiece</a>, <a class="el" href="class_king.html#a83bbb8dd9c1552053bfe45c4afe383d4">King</a> и <a class="el" href="class_sliding_piece.html#a1bbf9bfc4cec565dd57172c986bfc3f2">SlidingPiece</a>.</p>
+
+</div>
+</div>
+<a id="acdfc3a863b7aa2e1b95c00f2e630798e" name="acdfc3a863b7aa2e1b95c00f2e630798e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdfc3a863b7aa2e1b95c00f2e630798e">&#9670;&#160;</a></span>getSymbol()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual char ChessPiece::getSymbol </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получить символ фигуры для отображения. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>char Символ ('R', 'B', 'Q', 'N', 'K'). </dd></dl>
+
+<p>Замещается в <a class="el" href="class_bishop.html#a81f01daa1c0f9543be41da1aa029c9ad">Bishop</a>, <a class="el" href="class_horse.html#a8618a43cad665ffe33c81b99d8617c43">Horse</a>, <a class="el" href="class_king.html#af8d335d8450cb7936017e6342abb3d0a">King</a>, <a class="el" href="class_queen.html#a5ae4cc8c49cef04e868cd53c5c76fc4e">Queen</a> и <a class="el" href="class_rook.html#a1d09dc7e45dd77468078bc3d9d9ba131">Rook</a>.</p>
+
+</div>
+</div>
+<a id="a5715f7b4b81bb70ab5a9567bd75150d4" name="a5715f7b4b81bb70ab5a9567bd75150d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5715f7b4b81bb70ab5a9567bd75150d4">&#9670;&#160;</a></span>getType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ChessPiece::getType </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Виртуальная функция с реализацией по умолчанию. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>std::string Тип фигуры. </dd></dl>
+
+<p>Переопределяется в <a class="el" href="class_bishop.html#a3a462016f3011e2186f42779fd654eee">Bishop</a>, <a class="el" href="class_horse.html#a2bf7cdda15c493d995161beab400cbe7">Horse</a>, <a class="el" href="class_jumping_piece.html#a02f739100b7fcc17e0d082932e16ceb0">JumpingPiece</a>, <a class="el" href="class_king.html#a4d050f208da9062323f92bdf1f9213f2">King</a>, <a class="el" href="class_queen.html#a5ab2c7139081496639e749fe56f31c0e">Queen</a>, <a class="el" href="class_rook.html#a6cc0ef721b525185358c94fb0a711737">Rook</a> и <a class="el" href="class_sliding_piece.html#ada2671e7fcc1b626f37dacaa7946d0e4">SlidingPiece</a>.</p>
+
+</div>
+</div>
+<a id="aa83b4e1590e5cc7b9a3a78748f87dc7b" name="aa83b4e1590e5cc7b9a3a78748f87dc7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa83b4e1590e5cc7b9a3a78748f87dc7b">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chess_piece.html">ChessPiece</a> &amp; ChessPiece::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chess_piece.html">ChessPiece</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оператор присваивания (глубокое копирование). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Объект, из которого производится присваивание. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Ссылка на текущий объект. </dd></dl>
+
+</div>
+</div>
+<a id="adea4cb68b789d03cb7acab10d3a1a6ae" name="adea4cb68b789d03cb7acab10d3a1a6ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adea4cb68b789d03cb7acab10d3a1a6ae">&#9670;&#160;</a></span>validateBoardState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChessPiece::validateBoardState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chess_piece.html">ChessPiece</a> *const</td>          <td class="paramname"><span class="paramname"><em>pieces</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Статическая функция проверки состояния доски. </p>
+<p>Проверяет, что на доске не более одного короля каждого цвета. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pieces</td><td>Массив указателей на фигуры. </td></tr>
+    <tr><td class="paramname">count</td><td>Количество фигур в массиве. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если состояние корректно. </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="chesspiece_8h_source.html">chesspiece.h</a></li>
+<li><a class="el" href="chesspiece_8cpp.html">chesspiece.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_chess_piece.html">ChessPiece</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>
