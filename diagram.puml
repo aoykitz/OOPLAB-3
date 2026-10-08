@@ -1,0 +1,113 @@
+@startuml diagram
+
+enum Color {
+    WHITE
+    BLACK
+}
+
+struct Direction {
+    +int dx
+    +int dy
+}
+
+abstract class ChessPiece {
+    #int m_x
+    #int m_y
+    #Color m_color
+    #char* m_name
+    -{static} int s_whiteCount
+    -{static} int s_blackCount
+    --
+    +ChessPiece(x: int, y: int, color: Color, name: char*)
+    +ChessPiece(other: ChessPiece&)
+    +operator=(other: ChessPiece&) : ChessPiece&
+    +{abstract} ~ChessPiece()
+    --
+    +{abstract} canMoveTo(x: int, y: int) : bool
+    +{abstract} getSymbol() : char
+    +getType() : string
+    +print() : void
+    +getX() : int
+    +getY() : int
+    +getColor() : Color
+    +getName() : char*
+    +{static} getWhiteCount() : int
+    +{static} getBlackCount() : int
+    +{static} validateBoardState(pieces: ChessPiece*[], count: int) : bool
+}
+
+abstract class SlidingPiece {
+    +SlidingPiece(x: int, y: int, color: Color, name: char*)
+    +canMoveTo(x: int, y: int) : bool
+    +getType() : string
+    #{abstract} getDirections(count: int&) : const Direction*
+}
+
+abstract class JumpingPiece {
+    +JumpingPiece(x: int, y: int, color: Color, name: char*)
+    +canMoveTo(x: int, y: int) : bool
+    +getType() : string
+    #{abstract} getJumps(count: int&) : const Direction*
+}
+
+interface CombinedPiece {
+    +{abstract} isCombined() : bool
+}
+
+class Rook {
+    +Rook(x: int, y: int, color: Color)
+    +getSymbol() : char
+    +getType() : string
+    #getDirections(count: int&) : const Direction*
+    -{static} s_directions : const Direction[4]
+}
+
+class Bishop {
+    +Bishop(x: int, y: int, color: Color)
+    +getSymbol() : char
+    +getType() : string
+    #getDirections(count: int&) : const Direction*
+    -{static} s_directions : const Direction[4]
+}
+
+class Queen {
+    +Queen(x: int, y: int, color: Color)
+    +getSymbol() : char
+    +getType() : string
+    +isCombined() : bool
+    #getDirections(count: int&) : const Direction*
+    -{static} s_directions : const Direction[8]
+}
+
+class Horse {
+    +Horse(x: int, y: int, color: Color)
+    +getSymbol() : char
+    +getType() : string
+    #getJumps(count: int&) : const Direction*
+    -{static} s_jumps : const Direction[8]
+}
+
+class King {
+    +King(x: int, y: int, color: Color)
+    +getSymbol() : char
+    +canMoveTo(x: int, y: int) : bool
+    +getType() : string
+}
+
+ChessPiece <|-- SlidingPiece
+ChessPiece <|-- JumpingPiece
+ChessPiece <|-- King
+
+SlidingPiece <|-- Rook
+SlidingPiece <|-- Bishop
+SlidingPiece <|-- Queen
+
+JumpingPiece <|-- Horse
+
+CombinedPiece <|.. Queen
+
+ChessPiece ..> Color : использует
+SlidingPiece ..> Direction : использует
+JumpingPiece ..> Direction : использует
+
+@enduml
